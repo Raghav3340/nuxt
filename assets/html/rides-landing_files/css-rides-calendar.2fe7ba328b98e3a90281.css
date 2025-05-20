@@ -1,0 +1,914 @@
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/src/index.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js!./node_modules/glob-import-loader/index.js??ruleSet[1].rules[1].use[4]!./src/main/webpack/components/re-rides/ridescalendar/scss/_ridescalendar.scss ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@font-face {
+  font-family: "GuardianSansXCond Bold";
+  src: url("./rides-landing_files/GuardianSansXCond-Bold.otf");
+  src: url("GuardianSansXCond-Bold.otf#iefix") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GuardianSansXCond Semibold";
+  src: url("./rides-landing_files/GuardianSansXCond-Semibold.otf");
+  src: url("GuardianSansXCond-Bold.otf#iefix") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GuardianSansXCond Medium";
+  src: url("./rides-landing_files/GuardianSansXCond-Medium.otf");
+  src: url("GuardianSansXCond-Medium.otf#iefix") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GuardianSansXCond Regular";
+  src: url("./rides-landing_files/GuardianSansXCond-Regular.otf");
+  src: url("GuardianSansXCond-Regular.otf#iefix") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat Light";
+  src: url("./rides-landing_files/Montserrat-Light.ttf");
+  src: url("Montserrat-Light.ttf#iefix") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat Regular";
+  src: url("./rides-landing_files/Montserrat--Regular.ttf");
+  src: url("Montserrat--Regular.ttf#iefix") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat Semibold";
+  src: url("./rides-landing_files/Montserrat-SemiBold.ttf");
+  src: url("Montserrat-SemiBold.ttf#iefix") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat Bold";
+  src: url("./rides-landing_files/Montserrat-Bold.ttf");
+  src: url("Montserrat-Bold.ttf#iefix") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Reicons";
+  src: url("reicons.ttf#iefix") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+html,
+body {
+  overflow: visible;
+}
+
+html,
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+  font-size: 14px;
+  font-family: "Montserrat Light";
+  line-height: 1.5;
+  color: #FFF;
+  background: #ECECEC;
+  overflow: visible;
+  overflow-x: hidden;
+  background: #0a0a0a;
+}
+@media screen and (max-width: 767px) {
+  html,
+  body {
+    font-size: 14px;
+  }
+}
+
+.opened-in-iframe {
+  height: 100%;
+}
+
+a {
+  color: #0a0a0a;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font: inherit;
+}
+
+.d-none {
+  display: none !important;
+}
+
+.cmp-carousel__actions,
+.cmp-carousel__core-actions {
+  display: none;
+}
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "GuardianSansXCond Semibold";
+}
+
+ol,
+ul,
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1050;
+  background: rgba(24, 24, 24, 0.6980392157);
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.popup.popup-show {
+  display: block;
+}
+.popup .popup__inner {
+  position: relative;
+  margin: 30px auto;
+  max-width: 480px;
+  min-height: calc(100% - 3.5rem);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.popup .popup__content {
+  background: #282828;
+  position: relative;
+  width: 100%;
+}
+.popup .close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  z-index: 9;
+  background: transparent;
+  opacity: 1;
+  padding: 5px 8px;
+  border: none;
+  color: #fff;
+  -webkit-text-stroke: 1px;
+  font-size: 18.67px !important;
+  cursor: pointer;
+}
+
+.icon-close:before {
+  content: "p";
+}
+
+.transparent-clr-w-btn.custom-btn {
+  background-color: transparent;
+  color: #ededed;
+  border: 1px solid #848484;
+}
+
+.arrow-l:after {
+  content: "z";
+  font-family: "reicons";
+  position: absolute;
+  left: 0;
+}
+
+.arrow-r:after {
+  content: "A";
+  font-family: "reicons";
+  position: absolute;
+  right: 0;
+}
+
+html:has(.popup-open) {
+  overflow: hidden;
+}
+
+.slick-next:before {
+  content: "A";
+  display: inline-block;
+  font-family: Reicons;
+}
+
+.slick-prev:before {
+  content: "z";
+  display: inline-block;
+  font-family: Reicons;
+}
+
+.custom-btn.cta-yellow {
+  padding: 18px 24px;
+  background: linear-gradient(112.38deg, rgba(255, 255, 255, 0.5) -120.84%, rgba(255, 255, 255, 0.1) 79.67%);
+  border: 1px solid;
+  border-image-source: linear-gradient(131.33deg, rgba(255, 255, 255, 0.26) -34.97%, rgba(255, 255, 255, 0) 114.31%);
+  width: 100%;
+  color: #daaa00;
+  font-size: 14px;
+  line-height: 20px;
+  border-image-slice: 2;
+}
+
+.custom-btn.cta-yellow.disabled {
+  background: #181818;
+  border: 2px solid #373737;
+  color: #4f4f4f;
+  cursor: not-allowed;
+  border: 1px solid #4f4f4f;
+  font-family: "Montserrat Semibold";
+}
+
+.rides-checkbox-wrapper {
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+.rides-checkbox-wrapper input {
+  position: absolute;
+  left: 0;
+  opacity: 0;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+.rides-checkbox-wrapper .confirm-label {
+  font-family: "Montserrat";
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+  color: #ededed;
+  font-size: 14px;
+  line-height: 22.4px;
+  font-weight: 600;
+  cursor: pointer;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  white-space: normal;
+  word-break: normal;
+  padding-left: 32px;
+}
+.rides-checkbox-wrapper .confirm-label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 3px;
+  border: 1px solid #da291c;
+  background-color: #da291c;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.rides-checkbox-wrapper .confirm-label::after {
+  content: "";
+  position: absolute;
+  left: 3px;
+  width: 16px;
+  height: 8.3px;
+  border-bottom: 3.5px solid #181818;
+  border-left: 3.5px solid #181818;
+  -webkit-transform: rotate(-45deg) scale(0);
+          transform: rotate(-45deg) scale(0);
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  pointer-events: none;
+}
+@media (max-width: 767px) {
+  .rides-checkbox-wrapper .confirm-label::after {
+    top: 19px !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .rides-checkbox-wrapper .confirm-label::after {
+    top: 6px !important;
+  }
+}
+@media (min-width: 1024px) {
+  .rides-checkbox-wrapper .confirm-label::after {
+    top: 7px !important;
+  }
+}
+.rides-checkbox-wrapper .confirm-label .disclaimer-and {
+  color: #a7a7a7;
+}
+.rides-checkbox-wrapper .confirm-label .terms-policy {
+  color: white;
+  text-decoration: none;
+  display: inline;
+}
+.rides-checkbox-wrapper .confirm-label .terms-policy:hover {
+  text-decoration: underline;
+}
+.rides-checkbox-wrapper .confirm-label .privacy-policy {
+  display: inline;
+}
+.rides-checkbox-wrapper input:checked + .confirm-label::after {
+  -webkit-transform: rotate(-45deg) scale(1);
+          transform: rotate(-45deg) scale(1);
+}
+
+@media (max-width: 768px) {
+  .button-sticky {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+}
+@media (max-width: 768px) {
+  .confirm-label {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    white-space: nowrap;
+  }
+}
+.swiper-horizontal {
+  overflow: hidden;
+}
+
+.rides-landing-app {
+  overflow: visible;
+}
+.rides-landing-app * {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+}
+
+.rides-calendar {
+  color: black;
+  background-color: white;
+}
+.rides-calendar .calendar-bottom-left-container {
+  height: 0;
+  width: 0;
+  opacity: 0;
+}
+.rides-calendar .rides-calendar-container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .rides-calendar .rides-calendar-container {
+    max-width: 100%;
+    margin: 0 6px;
+  }
+}
+.rides-calendar .rides-calendar__no-rides-message h2 {
+  font-size: 22px;
+  margin: 2rem 0;
+  text-align: center;
+}
+.rides-calendar .rides-calendar__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2rem;
+  padding-top: 40px;
+}
+@media (max-width: 768px) {
+  .rides-calendar .rides-calendar__header {
+    padding: 20px;
+  }
+}
+.rides-calendar .rides-calendar__header h2 {
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 48px;
+}
+@media (max-width: 649px) {
+  .rides-calendar .rides-calendar__header h2 {
+    font-size: 28px;
+    line-height: 32px;
+  }
+}
+.rides-calendar .rides-calendar__header-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.5rem;
+}
+.rides-calendar .rides-calendar__view-change-button {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: none;
+  background: #cacaca;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+  color: #4f4f4f;
+  opacity: 0.3;
+}
+.rides-calendar .rides-calendar__view-change-button.active {
+  color: white;
+  background: rgb(64, 59, 41);
+  opacity: 1;
+}
+.rides-calendar .rides-calendar__category-tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+@media (max-width: 767px) {
+  .rides-calendar .rides-calendar__category-tabs {
+    overflow: auto;
+    scrollbar-width: none;
+    padding: 0 1rem;
+  }
+}
+.rides-calendar .rides-calendar__category-tab {
+  padding: 0.75rem 1.5rem;
+  background: #fff;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5rem;
+  font-size: 14px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  border: 1px solid rgb(24, 24, 24);
+  border-radius: 0;
+  white-space: nowrap;
+}
+.rides-calendar .rides-calendar__category-tab.hidden {
+  display: none;
+}
+.rides-calendar .rides-calendar__category-tab.active {
+  background: #1a1a1a;
+  color: white;
+  border-color: #1a1a1a;
+}
+.rides-calendar .rides-calendar__main-content {
+  display: grid;
+  grid-template-columns: 1fr 2.3fr;
+  gap: 2rem;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+@media (max-width: 767px) {
+  .rides-calendar .rides-calendar__main-content {
+    grid-template-columns: 1fr;
+    margin: 0 1rem;
+  }
+}
+.rides-calendar .rides-calendar__main-content[selected-view=list] {
+  grid-template-columns: 1fr;
+}
+.rides-calendar .rides-calendar__main-content[selected-view=list] .rides-calendar__calendar-section {
+  padding: 0;
+}
+.rides-calendar .rides-calendar__main-content[selected-view=list] .rides-calendar__calendar-section .rides-calendar__calendar-header {
+  margin-bottom: 0;
+}
+.rides-calendar .rides-calendar__main-content[selected-view=list] .rides-calendar__calendar-section .rides-calendar__calendar-grid {
+  display: none !important;
+}
+.rides-calendar .rides-calendar__main-content[selected-view=list] .rides-calendar__view-more-container {
+  margin-top: -32px;
+}
+.rides-calendar .rides-calendar__calendar-section {
+  background: white;
+  padding: 1.5rem 0;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+@media (max-width: 768px) {
+  .rides-calendar .rides-calendar__calendar-section {
+    padding: 0;
+  }
+}
+.rides-calendar .rides-calendar__calendar-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+.rides-calendar .rides-calendar__month-year {
+  font-size: 24px;
+  letter-spacing: 0.8px;
+  line-height: 28px;
+  text-transform: uppercase;
+  font-family: "GuardianSansXCond Semibold";
+  color: #181818;
+}
+.rides-calendar .rides-calendar__calendar-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #616161;
+  padding-bottom: 24px;
+}
+@media (max-width: 768px) {
+  .rides-calendar .rides-calendar__calendar-nav {
+    border-bottom: 1px solid rgb(132, 132, 132);
+    padding-bottom: 16px;
+  }
+}
+.rides-calendar .rides-calendar__calendar-nav button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.7rem;
+  border: 1px solid rgb(167, 167, 167);
+  border-radius: 100px;
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.rides-calendar .rides-calendar__prev-month svg {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.rides-calendar .rides-calendar__calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.5rem;
+  padding: 0 16px;
+}
+.rides-calendar .calendar-cell {
+  aspect-ratio: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  position: relative;
+  background-color: transparent;
+  border: none;
+  font-weight: 600;
+  font-family: "Montserrat";
+}
+.rides-calendar .calendar-cell:hover {
+  background: #f5f5f5;
+}
+.rides-calendar .calendar-cell.has-event .calendar-cell-text {
+  position: relative;
+  z-index: 2;
+}
+.rides-calendar .calendar-cell.has-event::after {
+  content: "";
+  position: absolute;
+  display: block;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background: #ffb800;
+  /* border-radius: 50%; */
+  border: 1px solid transparent;
+  z-index: 0;
+  margin: -1px 0 0 -1px;
+}
+.rides-calendar .calendar-cell.has-event::before {
+  content: "";
+  height: 2rem;
+  width: 2rem;
+  position: absolute;
+  z-index: 9;
+  opacity: 1;
+  background-position: center;
+  background-size: 28px;
+  background-repeat: no-repeat;
+}
+.rides-calendar .calendar-cell.has-event.category-marquee::after {
+  background: rgba(139, 115, 85, 0.2509803922);
+  border-color: #8b7355;
+}
+.rides-calendar .calendar-cell.has-event.category-marquee::before {
+  background-image: url("/content/dam/RE-Platform-Revamp/ride-details/rides-calendar/marquee-ride-icon.png");
+}
+.rides-calendar .calendar-cell.has-event.category-curated::after {
+  background: rgba(255, 107, 107, 0.2509803922);
+  border-color: #ff6b6b;
+}
+.rides-calendar .calendar-cell.has-event.category-curated::before {
+  background-image: url("/content/dam/RE-Platform-Revamp/ride-details/rides-calendar/ride-curated-icon.png");
+}
+.rides-calendar .calendar-cell.has-event.category-rideout::after {
+  background: rgba(218, 165, 32, 0.2509803922);
+  border-color: #daa520;
+}
+.rides-calendar .calendar-cell.has-event.category-rideout::before {
+  background-image: url("/content/dam/RE-Platform-Revamp/ride-details/rides-calendar/rideout-icon.png");
+}
+.rides-calendar .rides-calendar__weekday-header {
+  text-align: center;
+  font-weight: 700;
+  padding: 0.5rem 0;
+  text-align: center;
+}
+.rides-calendar .rides-calendar__rides-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.5rem;
+}
+.rides-calendar .rides-calendar__ride-card {
+  background: white;
+  overflow: hidden;
+  border-bottom: 1px solid rgb(132, 132, 132);
+  border-radius: 0;
+  padding-bottom: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.5rem;
+}
+.rides-calendar .rides-calendar__view-more-container {
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: -8px;
+}
+@media (max-width: 767px) {
+  .rides-calendar .rides-calendar__view-more-container {
+    margin-top: -32px;
+  }
+}
+.rides-calendar .rides-calendar__view-more-container .rides-calendar__view-more-button {
+  border: none;
+  background: transparent;
+  font-size: 16px;
+  color: #DA291c;
+  font-weight: 800;
+  font-family: "Montserrat";
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-fill: balance;
+     -moz-column-fill: balance;
+          column-fill: balance;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 24px;
+}
+@media (max-width: 649px) {
+  .rides-calendar .rides-calendar__view-more-container .rides-calendar__view-more-button {
+    font-size: 14px;
+  }
+}
+.rides-calendar .rides-calendar__view-more-container .arrow-icon {
+  height: 20px;
+  width: 20px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+.rides-calendar .rides-calendar__view-more-container .arrow-icon {
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+.rides-calendar .ride-image {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 168px;
+  width: 272px;
+}
+@media (max-width: 767px) {
+  .rides-calendar .ride-image {
+    height: 90px;
+    width: 90px;
+  }
+}
+.rides-calendar .ride-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+  gap: 1.5rem;
+}
+.rides-calendar .rides-calendar__ride-info {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  border-right: 1px solid #848484;
+  height: 100%;
+}
+.rides-calendar .rides-calendar__ride-tag {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+}
+.rides-calendar .tag-marquee {
+  background: #8B7355;
+  color: white;
+}
+.rides-calendar .tag-curated {
+  background: #FF6B6B;
+  color: white;
+}
+.rides-calendar .tag-rideout {
+  background: #DAA520;
+  color: white;
+}
+.rides-calendar .rides-calendar__ride-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+  line-height: 30px;
+  color: #181818;
+}
+@media (max-width: 649px) {
+  .rides-calendar .rides-calendar__ride-title {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+.rides-calendar .rides-calendar__ride-date {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-right: 1rem;
+  -webkit-box-flex: 0.3;
+      -ms-flex: 0.3;
+          flex: 0.3;
+}
+.rides-calendar .rides-calendar__date-day {
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #181818;
+}
+@media (max-width: 649px) {
+  .rides-calendar .rides-calendar__date-day {
+    font-size: 28px;
+    line-height: 32px;
+  }
+}
+.rides-calendar .rides-calendar__date-month {
+  color: #4F4F4F;
+  font-size: 20px;
+  line-height: 24px;
+  font-family: "GuardianSansXCond Semibold";
+}
+.rides-calendar .rides-calendar__date-year {
+  color: #666;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+}
+.rides-calendar .dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.rides-calendar .dot-marquee {
+  background: #8B7355;
+}
+.rides-calendar .dot-curated {
+  background: #FF6B6B;
+}
+.rides-calendar .dot-rideout {
+  background: #DAA520;
+}

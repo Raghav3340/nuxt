@@ -1,0 +1,29 @@
+/* assets/css/globals.css */
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #000;
+    color: white;
+  }
+
+  [v-html] {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* global.css or main layout */
+html, body {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+  overflow: -moz-scrollbars-none;
+
+  /* Optional: prevent horizontal scroll */
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+
+  
