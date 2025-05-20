@@ -1,8 +1,15 @@
-import tailwindcss from "@tailwindcss/vite";
-
-
 export default defineNuxtConfig({
-  css: ["~/assets/css/globals.css"],
-  compatibilityDate: "2025-04-29",
-  
-});
+  modules: ['@nuxtjs/tailwindcss'], // ✅ Add Tailwind module
+  css: ['~/assets/css/globals.css'], // optional if you have custom styles
+  nitro: {
+    preset: 'netlify', // ✅ Enable Netlify SSR
+  },
+})
+function defineNuxtConfig(arg0: {
+  modules: string[]; // ✅ Add Tailwind module
+  css: string[]; // optional if you have custom styles
+  nitro: { preset: string; };
+}) {
+  throw new Error("Function not implemented.");
+}
+
