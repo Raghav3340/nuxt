@@ -1,10 +1,6 @@
 [build]
-  command   = "npm run build"
-  publish   = ".output/public"    # where Nitro writes the static assets
-  functions = ".output/server"    # where Nitro writes server lambda functions
+command = "npm run build"
+publish = ".output/public"
 
-[dev]
-  # optional: Netlify Dev for local SSR testing
-  framework = "#custom"
-  command   = "npm run dev"
-  targetPort = 3000
+[functions]
+directory = ".output/functions"
